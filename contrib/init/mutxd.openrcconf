@@ -1,0 +1,26 @@
+# /etc/conf.d/mutxd: config file for /etc/init.d/mutxd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/mutx/mutx.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/mutxd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/mutxd.pid"
+
+# Where to write mutxd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/mutxd"
+
+# User and group to own mutxd process
+#BITCOIND_USER="mutx"
+#BITCOIND_GROUP="mutx"
+
+# Path to mutxd executable
+#BITCOIND_BIN="/usr/bin/mutxd"
+
+# Nice value to run mutxd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

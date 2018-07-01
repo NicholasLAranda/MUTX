@@ -1,0 +1,26 @@
+[Unit]
+Description=Mutx's distributed currency daemon
+After=network.target
+
+[Service]
+User=mutx
+Group=mutx
+
+Type=forking
+PIDFile=/var/lib/mutxd/mutxd.pid
+
+ExecStart=/usr/bin/mutxd -daemon -pid=/var/lib/mutxd/mutxd.pid \
+          -conf=/etc/mutx/mutx.conf -datadir=/var/lib/mutxd
+
+ExecStop=-/usr/bin/mutx-cli -conf=/etc/mutx/mutx.conf \
+         -datadir=/var/lib/mutxd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

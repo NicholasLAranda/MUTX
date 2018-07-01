@@ -1,0 +1,29 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/mutx_bg.qm</file>
+        <file alias="ca">locale/mutx_ca.qm</file>
+        <file alias="cs">locale/mutx_cs.qm</file>
+        <file alias="da">locale/mutx_da.qm</file>
+        <file alias="de">locale/mutx_de.qm</file>
+        <file alias="en">locale/mutx_en.qm</file>
+        <file alias="en_US">locale/mutx_en_US.qm</file>
+        <file alias="es">locale/mutx_es.qm</file>
+        <file alias="fi">locale/mutx_fi.qm</file>
+        <file alias="fr_FR">locale/mutx_fr_FR.qm</file>
+        <file alias="it">locale/mutx_it.qm</file>
+        <file alias="ja">locale/mutx_ja.qm</file>
+        <file alias="ko_KR">locale/mutx_ko_KR.qm</file>
+        <file alias="nl">locale/mutx_nl.qm</file>
+        <file alias="pl">locale/mutx_pl.qm</file>
+        <file alias="pt">locale/mutx_pt.qm</file>
+        <file alias="pt_BR">locale/mutx_pt_BR.qm</file>
+        <file alias="ro_RO">locale/mutx_ro_RO.qm</file>
+        <file alias="ru">locale/mutx_ru.qm</file>
+        <file alias="sk">locale/mutx_sk.qm</file>
+        <file alias="sv">locale/mutx_sv.qm</file>
+        <file alias="tr">locale/mutx_tr.qm</file>
+        <file alias="uk">locale/mutx_uk.qm</file>
+        <file alias="zh_CN">locale/mutx_zh_CN.qm</file>
+        <file alias="zh_TW">locale/mutx_zh_TW.qm</file>
+    </qresource>
+</RCC>
