@@ -77,7 +77,7 @@ bool fCheckBlockIndex = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 60 * 12;
+unsigned int nStakeMinAge = 60 * 60 * 12;
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in umutx) are considered zero fee (for relaying and mining)
