@@ -551,6 +551,11 @@ public:
 
     /** MultiSig address added */
     boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
+
+    /** notify wallet backup*/
+      boost::signals2::signal<void (const bool& fSuccess, const std::string& filename)> NotifyWalletBacked;
+
+
 };
 
 

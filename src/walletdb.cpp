@@ -894,6 +894,12 @@ void ThreadFlushWalletDB(const string& strFile)
     }
 }
 
+void NotifyBacked(const CWallet& wallet, bool fSuccess, string strMessage)
+{
+    LogPrint(nullptr, strMessage.data());
+    wallet.NotifyWalletBacked(fSuccess, strMessage);
+}
+
 bool BackupWallet(const CWallet& wallet, const string& strDest)
 {
     if (!wallet.fFileBacked)
