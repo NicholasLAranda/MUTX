@@ -44,12 +44,12 @@ if [[ $DOSETUP =~ "y" ]] ; then
   cd
 
   ## INSTALL
-  rm MUTX-*.zip
+  rm MUTX_*.zip
   rm MUTX
   wget https://github.com/Nikita8669/MUTX/releases/download/v1.0/MUTX_Linux.zip
   unzip MUTX* -d MUTX
-  sudo chmod 755 mutx/mutx*
-  sudo mv mutx/mutx* /usr/bin
+  sudo chmod 755 MUTX/mutx*
+  sudo mv MUTX/mutx* /usr/bin
 
   sudo apt-get install -y ufw
   sudo ufw allow ssh/tcp
